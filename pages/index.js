@@ -5,5 +5,9 @@ import { useState, useEffect } from "react";
 import FormularioProducts from "../components/FormularioProducts";
 
 export default function Home() {
-  return <FormularioProducts />;
+  return (
+    <>
+      <FormularioProducts />
+    </>
+  );
 }
