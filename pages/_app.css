@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --cinza: #4f4f4f;
+}
+
+body,
+button {
+  font-family: "Poppins", sans-serif;
+  color: var(--cinza);
+}
+
+h1 {
+  font-size: 40px;
+}
