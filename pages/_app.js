@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <button onClick={() => Router.push("/cadastro_products")}>
           Cadastrar Produtos
         </button>
-        <button onClick={() => Router.push("/landing-page")}>
+        <button onClick={() => Router.push("/landing_page")}>
           Landing page
         </button>
         Esse menu é somente pra facilitar a navegação em desenvolvimento

@@ -2,6 +2,12 @@
 
 :root {
   --cinza: #4f4f4f;
+  --verde-claro: #dcf0e2;
+  --verde: #98d7c2;
+  --verde-escuro: #157d7e;
+  --verde-dark: #235051;
+
+  --btn-transition: background-color 0.15s ease-in-out;
 }
 
 body,
