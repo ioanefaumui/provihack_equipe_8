@@ -1,21 +1,7 @@
-import Link from "next/link";
+
 export default function HomePage(){
 return (
     <>
-     <header>
-        
-        <ul>
-          <li>Home</li>
-          <li>{/* <Image src="logo" alt="logo">Logo</Image> */}Logo</li>
-          <li>
-            <Link href="/chat">
-              <a>Chat</a>
-            </Link>
-          </li>
-          <li>Notificações</li>
-          <li>nome-usuario</li>
-        </ul>
-      </header>
       <main>
         <h1>Olá nome-usuario</h1>
         <h3>O que te traz aqui hoje</h3>
