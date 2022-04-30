@@ -1,15 +1,16 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import { useState, useEffect } from "react";
-import FormularioProducts from "../components/FormularioProducts";
+import Router from "next/router";
 
 import HomePage from "../components/HomePages/homepage";
 
 export default function Home() {
   return (
     <>
-      <HomePage />
+      <button onClick={() => Router.push("/cadastro_servicos")}>
+        Cadastrar serviços
+      </button>
+      <button onClick={() => Router.push("/cadastro_products")}>
+        Cadastrar Produtos
+      </button>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function FormularioProducts() {
+export default function FormularioProducts() {
   const [descricao, setDescricao] = useState("");
   const [estadoDeUso, setEstadoDeUso] = useState("");
   const [tamanho, setTamanho] = useState("");
@@ -17,6 +17,7 @@ function FormularioProducts() {
   if (cor.value == "") {
     return "Está faltando a cor";
   }
+  
 
   useEffect(() => {
     console.log(imagem);
@@ -24,7 +25,7 @@ function FormularioProducts() {
 
   return (
     <>
-      <form action="/send-data-here" method="post">
+      <form action="/cadastro_products" method="post">
         <label>Descrição: </label>
         <input
           name="descricao"
@@ -40,6 +41,7 @@ function FormularioProducts() {
           required
           onChange={(event) => setEstadoDeUso(event.target.value)}
         >
+          <option value="">Select...</option>
           <option value="bom">Bom</option>
           <option value="regular">Regular</option>
           <option value="otimo">Otimo</option>
@@ -60,6 +62,7 @@ function FormularioProducts() {
           id="imagem"
           onChange={(event) => setImagem(event.target.value)}
         />
+        <br/>
         <label>Cor: </label>
         <input
           name="cor"
@@ -68,20 +71,21 @@ function FormularioProducts() {
           required
           onChange={(event) => setCor(event.target.value)}
         />
-        <br />a<label>Disponivel: </label>
+        <br />
+        <label>Disponibilidade: </label>
         <select
           name="disponivel"
           required
-          onChange={(event) => setDescricao(event.target.value)}
+          onChange={(event) => setDisponivel(event.target.value)}
         >
+          <option value="">Select...</option>
           <option value="True">Vendido</option>
           <option value="False">Disponivel</option>
         </select>
         <button type="submit">Enviar</button>
       </form>
-      <ul></ul>
     </>
   );
 }
 
-export default FormularioProducts;
+
