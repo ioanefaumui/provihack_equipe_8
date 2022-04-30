@@ -1,0 +1,38 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.paragraph {
+  max-width: 793px;
+  margin-top: 33px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  width: 292px;
+  height: 48px;
+  border: none;
+  background-color: #c4c4c4;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: rgba(63, 107, 201, 0.39);
+}
+
+.login {
+  margin-top: 57px;
+}
+
+.cadastrar {
+  margin-top: 22px;
+}
