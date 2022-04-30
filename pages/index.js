@@ -1,6 +1,9 @@
 
 import Router from "next/router";
 
+import HomePage from "../components/HomePages/homepage";
+
+
 export default function Home() {
   return(
     <>
@@ -8,8 +11,9 @@ export default function Home() {
       Cadastrar serviços
     </button>
     <button onClick={() => Router.push('/cadastro_products')}>
-      Cadastrar serviços
+      Cadastrar Produtos
     </button>
     </>
   ) 
+
 }
