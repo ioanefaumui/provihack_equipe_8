@@ -1,7 +1,6 @@
 import Router from "next/router";
 import { useState } from "react"
 import styles from "../styles/pages/PecasId.module.css";
-import Image from "next/image";
 
 export default function PecasId(){
 
