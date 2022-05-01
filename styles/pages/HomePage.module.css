@@ -1,30 +1,15 @@
-.main{
+.chamadasBlog {
+    width: 55%;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #235051;
+    justify-content: space-between;
 }
 
-.ulList{
+.btnOptions{
     display: flex;
-    justify-content:  center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-}
-.liList{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    width: 200px;
-    height: 120px;
-    border-radius: 15px;
-    margin: 20px;
-    border: none;
-    background-color: #1d7d7e;
-    color: #fff;
-}
 .listButton{
     margin: 20px;
     
