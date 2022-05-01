@@ -2,6 +2,11 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  background-image: url("../../public/landing-page-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 .paragraph {
@@ -12,21 +17,26 @@
 }
 
 .btn {
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
   font-size: 16px;
   width: 292px;
   height: 48px;
   border: none;
-  background-color: #c4c4c4;
+  background-color: var(--verde-claro);
+  transition: var(--btn-transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--verde-dark);
 }
 
 .btn:hover,
 .btn:focus,
 .btn:active {
-  outline-width: 3px;
-  outline-style: solid;
-  outline-color: rgba(63, 107, 201, 0.39);
+  background-color: var(--verde);
+  transition: var(--btn-transition);
 }
 
 .login {
@@ -34,5 +44,17 @@
 }
 
 .cadastrar {
-  margin-top: 22px;
+  all: inherit;
+  color: var(--verde-claro);
+  margin-top: 34px;
+  cursor: pointer;
+  width: fit-content;
+  text-decoration-line: underline;
+}
+
+.cadastrar:hover,
+.cadastrar:focus,
+.cadastrar:active {
+  background-color: inherit;
+  color: var(--verde);
 }

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Header from "../Header";
+import Footer from "../Footer"
 
 export default function HomePage(){
 return (
@@ -34,6 +34,8 @@ return (
         </div>
         <button type="button" onClick={() => router.push('/blog')}>Veja Mais</button>
       </main>
+      
+      <Footer/>
     </>
 )
 }
