@@ -1,7 +1,11 @@
-import styles from "../../styles/pages/HomePage.module.css";
-import Header from "../Header";
-import Footer from "../Footer";
-import { useState } from "react";
+import styles from "../styles/pages/HomePage.module.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import { useSession, signIn, signOut } from "next-auth/react";
+import Router from "next/router";
+
 export default function HomePage() {
   const [user, setUser] = useState("Yasmin");
   const [blog, setBlog] = useState([
@@ -9,8 +13,18 @@ export default function HomePage() {
     { id: 2, imagem: "img2", description: "aconteu isso e aqui" },
     { id: 3, imagem: "img3", description: "aconteu isso e aqui" },
   ]);
+
+  const { data: status } = useSession();
+
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      Router.push("/");
+    }
+  }, [status]);
+
   return (
     <>
+      <Header />
       <main className={styles.main}>
         <h1>Olá {user}</h1>
         <h3>O que te traz aqui hoje?</h3>

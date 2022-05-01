@@ -1,5 +1,7 @@
 import { ContainerUser } from "./styles";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+import { signOut } from "next-auth/react";
 
 const DropdownUser = () => {
   return (
@@ -12,7 +14,7 @@ const DropdownUser = () => {
         </li>
         <li>
           <Link href="/" passHref>
-            <a>Sair</a>
+            <a onClick={() => signOut}>Sair</a>
           </Link>
         </li>
       </ul>
