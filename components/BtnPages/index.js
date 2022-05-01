@@ -1,8 +1,8 @@
 import { Button } from "./styles";
 
-const BtnPages = ({ text, backgroundColor, color, width, pathLink }) => {
+const BtnPages = ({ text, backgroundColor, color, width, onClick }) => {
   return (
-    <Button backgroundColor={backgroundColor} width={width} color={color}>
+    <Button backgroundColor={backgroundColor} width={width} color={color} onClick={onClick}>
       { text }
     </Button>
   );
