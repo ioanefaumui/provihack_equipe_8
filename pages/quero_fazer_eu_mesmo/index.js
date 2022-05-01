@@ -16,7 +16,7 @@ export default function QueroFazerEuMesmo() {
 
         <ul className="tipsList">
           <li>
-            <Link href="/" passHref>
+            <Link href="/quero_fazer_eu_mesmo/como_fazer_aplicacao_de_perolas_em_seus_jeans" passHref>
               <a>
                 <div className="imgCover">
                   <Image src="/custom1.png" alt="" layout="fill" />
@@ -26,7 +26,7 @@ export default function QueroFazerEuMesmo() {
             </Link>
           </li>
           <li>
-            <Link href="/" passHref>
+            <Link href="/quero_fazer_eu_mesmo/2" passHref>
               <a>
                 <div className="imgCover">
                   <Image src="/custom2.png" alt="" layout="fill" />
@@ -36,7 +36,7 @@ export default function QueroFazerEuMesmo() {
             </Link>
           </li>
           <li>
-            <Link href="/" passHref>
+            <Link href="/quero_fazer_eu_mesmo/3" passHref>
               <a>
                 <div className="imgCover">
                   <Image src="/custom3.png" alt="" layout="fill" />
@@ -46,7 +46,7 @@ export default function QueroFazerEuMesmo() {
             </Link>
           </li>
           <li>
-            <Link href="/" passHref>
+            <Link href="/quero_fazer_eu_mesmo/4" passHref>
               <a>
                 <div className="imgCover">
                   <Image src="/custom4.png" alt="" layout="fill" />
@@ -56,7 +56,7 @@ export default function QueroFazerEuMesmo() {
             </Link>
           </li>
           <li>
-            <Link href="/" passHref>
+            <Link href="/quero_fazer_eu_mesmo/5" passHref>
               <a>
                 <div className="imgCover">
                   <Image src="/custom5.png" alt="" layout="fill" />
@@ -66,7 +66,7 @@ export default function QueroFazerEuMesmo() {
             </Link>
           </li>
           <li>
-            <Link href="/" passHref>
+            <Link href="/quero_fazer_eu_mesmo/6" passHref>
               <a>
                 <div className="imgCover">
                   <Image src="/custom6.png" alt="" layout="fill" />
