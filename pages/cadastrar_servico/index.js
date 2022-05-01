@@ -12,7 +12,7 @@ export default function CadastrarServico() {
   const [valores, setValores] = useState("");
 
   return (
-    <>
+    <Container>
       <Header />
 
       <Main>
@@ -73,6 +73,6 @@ export default function CadastrarServico() {
         </form>
       </Main>
       <Footer />
-    </>
+    </Container>
   );
 }

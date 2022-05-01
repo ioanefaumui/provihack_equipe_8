@@ -1,6 +1,6 @@
 import { Button } from "./styles";
 
-const BtnPages = ({ text, backgroundColor, color, width }) => {
+const BtnPages = ({ text, backgroundColor, color, width, pathLink }) => {
   return (
     <Button backgroundColor={backgroundColor} width={width} color={color}>
       { text }
