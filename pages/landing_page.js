@@ -19,11 +19,6 @@ const LandingPage = () => {
           diam vulputate ut pharetra. Egestas fringilla phasellus faucibus
           scelerisque eleifend.
         </p>
-<<<<<<< Updated upstream
-        <Link href="/login">
-          <a className={`${styles.btn} ${styles.login}`}>Faça Login</a>
-        </Link>
-=======
 
         <a
           className={`${styles.btn} ${styles.login}`}
@@ -32,7 +27,6 @@ const LandingPage = () => {
           Faça Login
         </a>
 
->>>>>>> Stashed changes
         <a className={`${styles.btn} ${styles.cadastrar}`}>Me cadastrar</a>
       </Container>
     </div>
