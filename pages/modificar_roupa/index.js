@@ -11,7 +11,7 @@ export default function ModificarRoupa() {
       <Header />
 
       <Main>
-        <h2>Como quer modificar?</h2>
+        <h1>Como quer modificar?</h1>
         <p>
           Você pode escolher o destino da sua peça, pra quem você deseja doar.
           Pode também se inpirar em muitos dos nossos tutorias de customização,
