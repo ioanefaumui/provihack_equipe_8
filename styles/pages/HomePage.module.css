@@ -1,0 +1,64 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #235051;
+}
+
+.ulList{
+    display: flex;
+    justify-content:  center;
+    flex-wrap: wrap;
+
+}
+.liList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 200px;
+    height: 120px;
+    border-radius: 15px;
+    margin: 20px;
+    border: none;
+    background-color: #1d7d7e;
+    color: #fff;
+}
+.listButton{
+    margin: 20px;
+    
+}
+.listButton:hover{
+    width: 230px;
+}
+.liText{
+    width: 220px;
+    font-size: 15px;
+    color: #235051;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 220px;
+    height: 120px;
+    border-radius: 15px;
+    border:none;
+    background-color: #235051;
+    color: #fff;
+}
+
+.liList:hover{
+    width: 220px;
+}
+
+.text{
+    text-align: center;
+    font-size: 1rem;
+}
+.veja{
+    border:none;
+    text-decoration: underline;
+}
