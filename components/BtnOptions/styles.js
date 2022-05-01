@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   width: 10.5vw;
-  height: 12vh;
+  height: 13vh;
   border: none;
   border-radius: 10px;
   position: relative;

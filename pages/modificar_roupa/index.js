@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Link from "next/link";
 import { Container, Main } from "./styles";
+import ChamadaBlog from "../../components/ChamadaBlog";
 
 export default function ModificarRoupa() {
   return (
@@ -37,6 +38,13 @@ export default function ModificarRoupa() {
 
       <div>
         <h4>Últimas do blog</h4>
+      </div>
+
+      <div>
+        <ChamadaBlog
+          img="/chamadablog4.png"
+          text="Saiba tudo sobre a reciclagem de resíduos têxteis no Brasil."
+        />
       </div>
 
       <Footer />
