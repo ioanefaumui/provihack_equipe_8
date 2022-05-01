@@ -9,10 +9,10 @@ export const Main = styled.main`
   text-align: center;
 
   h1 {
-    padding-top: 0.8em;
+    padding-top: 1.6em;
     text-align: center;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
   }
 
@@ -31,14 +31,15 @@ export const Main = styled.main`
   form {
     text-align: left;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  form input, textarea {
-    width: 250px;
-    padding: 0.8em;
+  form input,
+  textarea {
+    width: 300px;
+    padding: 1em;
     border: 1px solid rgba(130, 130, 130, 0.5);
     background-color: transparent;
     border-radius: 10px;
@@ -49,7 +50,12 @@ export const Main = styled.main`
   }
 
   form textarea {
-      resize: none;
-      height: 10vh;
+    resize: none;
+    height: 11vh;
+    margin-bottom: -0.6em;
+  }
+
+  form button {
+    margin-top: 1.5em;
   }
 `;

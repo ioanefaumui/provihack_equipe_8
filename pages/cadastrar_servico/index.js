@@ -68,7 +68,7 @@ export default function CadastrarServico() {
             text="Salvar informações"
             backgroundColor="#157D7E"
             color="#DCF0E2"
-            width="250px"
+            width="300px"
           />
         </form>
       </Main>
