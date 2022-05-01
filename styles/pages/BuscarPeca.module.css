@@ -1,6 +1,7 @@
 
 .title{
     text-align: center;
+    color:#235051;
 }
 .divs{
      display: flex;
@@ -9,19 +10,21 @@
 .form{
     text-align: center;
     width: 500px;
+    color:#235051;
 }
 
 
 .inputName{
-    
-    padding: 8px 5px;
+    border-radius: 10px;
+    padding: 10px 5px;
     margin: 10px;
-    width:70%;
+    width:75%;
 }
 .inputTem{
-    padding: 8px ;
-    margin: 10px;
-    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    width: 15%;
 }
 .checkbox{
     margin: 10px;
