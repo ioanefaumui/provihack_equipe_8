@@ -17,11 +17,8 @@ export default function FormularioProducts() {
   if (cor.value == "") {
     return "Está faltando a cor";
   }
-  
 
-  useEffect(() => {
-    console.log(imagem);
-  }, [imagem]);
+  useEffect(() => {}, []);
 
   return (
     <>
@@ -62,7 +59,7 @@ export default function FormularioProducts() {
           id="imagem"
           onChange={(event) => setImagem(event.target.value)}
         />
-        <br/>
+        <br />
         <label>Cor: </label>
         <input
           name="cor"
@@ -87,5 +84,3 @@ export default function FormularioProducts() {
     </>
   );
 }
-
-

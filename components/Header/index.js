@@ -1,23 +1,30 @@
 import { Container } from "./styles";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DropdownActions from "../Dropdowns/DropdownActions";
 import DropdownUser from "../Dropdowns/DropdownUser";
+import { useSession, signOut } from "next-auth/react";
 
 const Header = () => {
   const [actionsMenu, setActionsMenu] = useState(false);
   const [userMenu, setUserMenu] = useState(false);
 
+  const { data: session, status } = useSession();
+
   const actionsMenuClick = () => {
     setActionsMenu(!actionsMenu);
     setUserMenu(false);
-  }
+  };
 
   const userMenuClick = () => {
     setUserMenu(!userMenu);
     setActionsMenu(false);
-  }
+  };
+
+  const getUserName = () => {
+    return session?.user?.email.split("@")[0];
+  };
 
   return (
     <Container>
@@ -93,7 +100,7 @@ const Header = () => {
                   />
                 </svg>
               </span>
-              {actionsMenu === true ? <DropdownActions /> : null }              
+              {actionsMenu === true ? <DropdownActions /> : null}
             </li>
             <li>
               <Link href="/blog" passHref>
@@ -162,7 +169,7 @@ const Header = () => {
                 />
               </div>
               <span>
-                Juliana
+                {getUserName()}
                 <svg
                   width="9"
                   height="6"
@@ -191,7 +198,7 @@ const Header = () => {
                   />
                 </svg>
               </span>
-              {userMenu === true ? <DropdownUser /> : null }
+              {userMenu === true ? <DropdownUser /> : null}
             </li>
           </ul>
         </nav>
