@@ -11,12 +11,12 @@ const DropdownActions = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/preciso_de_uma_roupa" passHref>
+                    <Link href="/lista_pecas" passHref>
                         <a>Preciso de uma roupa</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/ofereco_um_servico" passHref>
+                    <Link href="/cadastrar_servico" passHref>
                         <a>Ofereço um serviço</a>
                     </Link>
                 </li>

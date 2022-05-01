@@ -103,7 +103,7 @@ const Header = () => {
               {actionsMenu === true ? <DropdownActions /> : null}
             </li>
             <li>
-              <Link href="/blog" passHref>
+              <Link href="/quero_fazer_eu_mesmo" passHref>
                 <a>
                   <svg
                     width="16"

@@ -43,7 +43,7 @@ export default function HomePage() {
           <BtnOptions
             background="/btnoption2.png"
             text="Preciso de uma roupa"
-            pathLink="/buscar-peca"
+            pathLink="/lista_pecas"
           />
           <BtnOptions
             background="/btnoption5.png"

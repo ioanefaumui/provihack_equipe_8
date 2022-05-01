@@ -14,7 +14,7 @@ const DropdownUser = () => {
         </li>
         <li>
           <Link href="/" passHref>
-            <a onClick={() => signOut}>Sair</a>
+            <a onClick={() => {signOut}}>Sair</a>
           </Link>
         </li>
       </ul>
