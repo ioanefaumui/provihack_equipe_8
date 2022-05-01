@@ -1,8 +1,24 @@
 import { Container } from "./styles";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import DropdownActions from "../Dropdowns/DropdownActions";
+import DropdownUser from "../Dropdowns/DropdownUser";
 
 const Header = () => {
+  const [actionsMenu, setActionsMenu] = useState(false);
+  const [userMenu, setUserMenu] = useState(false);
+
+  const actionsMenuClick = () => {
+    setActionsMenu(!actionsMenu);
+    setUserMenu(false);
+  }
+
+  const userMenuClick = () => {
+    setUserMenu(!userMenu);
+    setActionsMenu(false);
+  }
+
   return (
     <Container>
       <div className="content">
@@ -14,7 +30,7 @@ const Header = () => {
           />
         </div>
         <nav>
-          <ul>
+          <ul className="navbar">
             <li>
               <Link href="/home" passHref>
                 <a>
@@ -33,6 +49,51 @@ const Header = () => {
                   Home
                 </a>
               </Link>
+            </li>
+            <li className="actionsMenu" onClick={actionsMenuClick}>
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.71577 12.424C1.45377 9.992 1.49377 6.18 3.84377 3.813C4.76477 2.8813 5.96233 2.27235 7.25777 2.077L7.18877 0C5.37019 0.219579 3.67946 1.0482 2.39177 2.351C-0.757234 5.521 -0.795234 10.64 2.26877 13.882L0.527766 15.634L6.03777 15.935L6.02277 10.101L3.71577 12.424ZM10.3628 0.465L10.3778 6.299L12.6848 3.977C14.9468 6.411 14.9068 10.223 12.5568 12.588C11.6359 13.5199 10.4383 14.1289 9.14277 14.324L9.21177 16.4C11.0303 16.1801 12.7212 15.352 14.0098 14.05C17.1578 10.878 17.1958 5.759 14.1318 2.519L15.8728 0.765L10.3628 0.465Z"
+                  fill="#157D7E"
+                />
+              </svg>
+              <span>
+                Ações
+                <svg
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="1.06066"
+                    y1="1"
+                    x2="4.5"
+                    y2="4.43934"
+                    stroke="#235051"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
+                  <line
+                    x1="0.75"
+                    y1="-0.75"
+                    x2="5.61396"
+                    y2="-0.75"
+                    transform="matrix(-0.707107 0.707107 0.707107 0.707107 9 1)"
+                    stroke="#235051"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </span>
+              {actionsMenu === true ? <DropdownActions /> : null }              
             </li>
             <li>
               <Link href="/blog" passHref>
@@ -92,7 +153,7 @@ const Header = () => {
                 </a>
               </Link>
             </li>
-            <li className="userOption">
+            <li className="userOption" onClick={userMenuClick}>
               <div className="imgUser">
                 <Image
                   src="/user.png"
@@ -130,6 +191,7 @@ const Header = () => {
                   />
                 </svg>
               </span>
+              {userMenu === true ? <DropdownUser /> : null }
             </li>
           </ul>
         </nav>
