@@ -1,12 +1,20 @@
 import "./_app.css";
 import GlobalStyle from "../styles/GlobalStyle";
 import Router from "next/router";
+<<<<<<< Updated upstream
 import Link from "next/link";
 import { UserProvider } from "@auth0/nextjs-auth0";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <UserProvider>
+=======
+import { SessionProvider } from "next-auth/react";
+
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
+  return (
+    <SessionProvider session={session}>
+>>>>>>> Stashed changes
       <div
         style={{
           position: "absolute",
@@ -33,7 +41,11 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       </div>
       <GlobalStyle />
       <Component {...pageProps} />
+<<<<<<< Updated upstream
     </UserProvider>
+=======
+    </SessionProvider>
+>>>>>>> Stashed changes
   );
 }
 
