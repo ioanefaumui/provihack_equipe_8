@@ -2,7 +2,7 @@ import Image from "next/image";
 import Container from "../components/Container";
 import styles from "../styles/pages/LandingPage.module.css";
 import logo from "../public/logo.svg";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { signIn } from "next-auth/react";
 
 const LandingPage = () => {
   return (
@@ -10,10 +10,8 @@ const LandingPage = () => {
       <Container size={1080}>
         <Image src={logo} alt="" height="80px" width="233px" />
         <p className={styles.paragraph}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec enim
-          diam vulputate ut pharetra. Egestas fringilla phasellus faucibus
-          scelerisque eleifend.
+          Você sabia que o equivalente a um caminhão de roupas descartadas é
+          enviado para o aterro ou à incineração a cada segundo?
         </p>
 
         <a
