@@ -1,5 +1,3 @@
-import Router from "next/router";
-
 import HomePage from "../components/HomePages/homepage";
 
 import { useSession, signIn, signOut } from "next-auth/react";

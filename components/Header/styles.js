@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Container = styled.header`
   width: 100vw;
   padding: 1em 0 1em 1.3em;
-  font-size: 18px;
+  font-size: 14px;
   background-color: #dcf0e2;
 
   .content {
-    width: 55%;
+    width: 65%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,6 @@ export const Container = styled.header`
   svg {
     margin-bottom: -1px;
     margin-right: 0.4em;
-    color: #828282;
     font-size: 18px;
   }
 
@@ -32,7 +31,7 @@ export const Container = styled.header`
     font-weight: bold;
   }
 
-  ul {
+  ul.navbar {
     width: 100%;
     display: flex;
     color: #235051;
@@ -40,7 +39,13 @@ export const Container = styled.header`
   }
 
   ul li {
-    margin-right: 1.8em;
+    margin-right: 1.6em;
+    cursor: pointer;
+  }
+
+  ul li.actionsMenu span svg{
+    margin-bottom: 1px;
+    margin-left: 0.5em;
   }
 
   ul li.userOption {

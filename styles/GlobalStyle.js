@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: "Poppins", sans-serif;
+    background-color: #E9f3EB;
   }
 
   button {

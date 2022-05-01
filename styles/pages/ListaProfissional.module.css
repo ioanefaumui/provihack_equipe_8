@@ -1,0 +1,49 @@
+.main{
+    color: #235051;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.ulList{
+    max-width: 1000px;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.liList{
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+    width: 310px;
+    height: 300px;
+}
+.buttonId{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    }
+.imagem{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.imagem:hover{
+    padding: 5px;
+    }
+
+    .props{
+        text-align: start;
+        color:#235051;
+    }
+    .namePeca{
+        font-size: 20px;
+    }
+    .ptext{
+        font-size: 15px;
+    }

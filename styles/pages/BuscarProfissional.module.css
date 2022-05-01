@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #235051;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 5px;
+}
+.inputName{
+    margin: 10px;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #235051;
+    border-radius: 10px;
+}
+.inputCidade{
+    width: 70%;
+    margin: 10px;
+    padding: 14px;
+    border: 1px solid #235051;
+    border-radius: 10px;
+}
+.inputEstado{
+    width: 16%;
+    margin: 10px;
+    padding: 14px;
+    border: 1px solid #235051;
+    border-radius: 10px;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    margin: 10px;
+    padding: 14px;
+    border: 1px solid #235051;
+    border-radius: 10px;
+    background-color:#1d7d7e ;
+    color: #fff;
+}

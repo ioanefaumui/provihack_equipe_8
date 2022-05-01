@@ -1,14 +1,17 @@
-import Image from "next/image";
-import { Button } from "./styles";
+import { Content } from "./styles";
+import Link from "next/link";
 
-const BtnOptions = ({ icon, altImg, text, backgroundColor }) => {
+const BtnOptions = ({ background, text, pathLink }) => {
   return (
-    <Button backgroundColor={backgroundColor}>
-      <div>
-        <Image src={icon} alt={altImg} layout="fill" />
-      </div>
-      {text}
-    </Button>
+    <Content background={background}>
+      <Link href={pathLink} passHref>
+        <a>
+          <div>
+            <p>{text}</p>
+          </div>
+        </a>
+      </Link>
+    </Content>
   );
 };
 
