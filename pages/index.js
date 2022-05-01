@@ -1,27 +1,32 @@
-import HomePage from "../components/HomePages/homepage";
-
+import Image from "next/image";
+import Container from "../components/Container";
+import styles from "../styles/pages/LandingPage.module.css";
+import logo from "../public/logo.svg";
 import { useSession, signIn, signOut } from "next-auth/react";
 
-export default function Home() {
-  const { data: session, status } = useSession();
-
-  const loading = status === "loading";
-
-  if (loading) return null;
+const LandingPage = () => {
   return (
-    <>
-      <HomePage />
-
-      {session ? (
-        <p>
-          <span>Signed in as {session?.user?.email}</span>
-          <button onClick={signOut}>Sign out</button>
+    <div className={styles.wrapper}>
+      <Container size={1080}>
+        <Image src={logo} alt="" height="80px" width="233px" />
+        <p className={styles.paragraph}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec enim
+          diam vulputate ut pharetra. Egestas fringilla phasellus faucibus
+          scelerisque eleifend.
         </p>
-      ) : (
-        <>
-          <button onClick={signIn}>Sign in</button>
-        </>
-      )}
-    </>
+
+        <a
+          className={`${styles.btn} ${styles.login}`}
+          onClick={() => signIn(null, { callbackUrl: "/home" })}
+        >
+          Faça Login
+        </a>
+
+        <a className={`${styles.btn} ${styles.cadastrar}`}>Me cadastrar</a>
+      </Container>
+    </div>
   );
-}
+};
+
+export default LandingPage;

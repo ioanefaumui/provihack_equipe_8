@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
-    <SessionProvider session={session}>
+    <>
       <div
         style={{
           position: "absolute",
@@ -17,23 +17,34 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           fontSize: "13px",
         }}
       >
-        <button onClick={() => Router.push("/cadastro_servicos")}>
-          Cadastrar serviços
-        </button>
-        <button onClick={() => Router.push("/cadastro_products")}>
-          Cadastrar Produtos
-        </button>
-        <button onClick={() => Router.push("/landing_page")}>
-          Landing page
-        </button>
-        <Link href="/login">
-          <button>Login</button>
+        <Link href="/">
+          <button>Landing Page</button>
+        </Link>
+        <Link href="/home">
+          <button>Home</button>
+        </Link>
+        <Link href="/cadastro_products">
+          <button>Cadastrar Produtos</button>
+        </Link>
+        <Link href="/lista_pecas">
+          <button>Lista pecas</button>
+        </Link>
+        <Link href="/lista_profissional">
+          <button>Lista profissional</button>
+        </Link>
+        <Link href="/pecas_id">
+          <button>Pecas ID</button>
+        </Link>
+        <Link href="/profissional_id">
+          <button>Profissional ID</button>
         </Link>
         Esse menu é somente pra facilitar a navegação em desenvolvimento
       </div>
-      <GlobalStyle />
-      <Component {...pageProps} />
-    </SessionProvider>
+      <SessionProvider session={session}>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </SessionProvider>
+    </>
   );
 }
 
