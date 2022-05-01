@@ -1,5 +1,6 @@
-
-import { useState } from "react"
+import { useState } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import styles from "../styles/pages/BuscarPeca.module.css";
 export default function BuscarPeca(){
 
@@ -42,6 +43,7 @@ export default function BuscarPeca(){
 
     return(
         < >
+        <Header />
         <h1 className={styles.title}>Busque sua peça!</h1>
         <div className={styles.divs}>
 
@@ -80,6 +82,7 @@ export default function BuscarPeca(){
             </div>
         </form>
         </div>
+        <Footer />
         </>
     )
     
