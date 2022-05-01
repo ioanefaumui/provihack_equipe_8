@@ -2,11 +2,7 @@ import Image from "next/image";
 import Container from "../components/Container";
 import styles from "../styles/pages/LandingPage.module.css";
 import logo from "../public/logo.svg";
-<<<<<<< Updated upstream
-import Link from "next/link";
-=======
 import { signIn } from "next-auth/react";
->>>>>>> Stashed changes
 
 const LandingPage = () => {
   return (
