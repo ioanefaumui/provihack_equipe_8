@@ -17,7 +17,7 @@ export const Container = styled.div`
 
     li a {
         padding: 0.5em;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     li:hover {
@@ -43,7 +43,7 @@ export const ContainerUser = styled.div`
 
     li a {
         padding: 0.5em;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     li:hover {

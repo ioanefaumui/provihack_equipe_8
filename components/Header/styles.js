@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Container = styled.header`
   width: 100vw;
   padding: 1em 0 1em 1.3em;
-  font-size: 18px;
+  font-size: 14px;
   background-color: #dcf0e2;
 
   .content {
-    width: 55%;
+    width: 65%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
