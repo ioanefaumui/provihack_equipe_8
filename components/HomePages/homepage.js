@@ -1,7 +1,11 @@
 
+import Header from "../Header";
+import Footer from "../Footer"
 export default function HomePage(){
 return (
     <>
+      <Header/>
+      
       <main>
         <h1>Olá nome-usuario</h1>
         <h3>O que te traz aqui hoje</h3>
@@ -30,6 +34,8 @@ return (
         </div>
         <button type="button" onClick={() => router.push('/blog')}>Veja Mais</button>
       </main>
+      
+      <Footer/>
     </>
 )
 }
