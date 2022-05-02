@@ -47,6 +47,6 @@ export const Container = styled.div`
   }
 
   .infosProfissa {
-      font-size: 14px;
+    font-size: 14px;
   }
 `;

@@ -1,4 +1,4 @@
-import { Container, Main } from "./styles";
+import { Container, Main } from "../../styles/cadastrarRoupa";
 import { useState } from "react";
 import BtnPages from "../../components/BtnPages";
 import Header from "../../components/Header";
