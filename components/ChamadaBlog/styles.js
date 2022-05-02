@@ -21,4 +21,8 @@ export const Container = styled.div`
       margin-top: 0.5em;
       margin-left: 0.2em;
   }
+
+  p:hover {
+      text-decoration: underline;
+  }
 `;

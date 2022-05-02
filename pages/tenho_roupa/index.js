@@ -1,56 +1,39 @@
-import Header from "../../components/Header";
-import { Container, ContentBlog, Main } from "./styles";
-import Footer from "../../components/Footer";
 import BtnOptions from "../../components/BtnOptions";
-import ChamadaBlog from "../../components/ChamadaBlog";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { useSession } from "next-auth/react";
-import Router from "next/router";
+import { Container, Main, ContentBlog } from "./styles";
+import ChamadaBlog from "../../components/ChamadaBlog";
 
-export default function HomePage() {
-  const [user, setUser] = useState("Ayana");
-  const [blog, setBlog] = useState([
-    { id: 1, imagem: "img", description: "aconteu isso e aqui" },
-    { id: 2, imagem: "img2", description: "aconteu isso e aqui" },
-    { id: 3, imagem: "img3", description: "aconteu isso e aqui" },
-  ]);
-
-  const { data: status } = useSession();
-
-  useEffect(() => {
-    if (status === "unauthenticated") {
-      Router.push("/");
-    }
-  }, [status]);
-
+export default function ModificarRoupa() {
   return (
     <Container>
       <Header />
 
       <Main>
-        <h1>Olá, {user}!</h1>
+        <h1>O que deseja fazer com a sua roupa?</h1>
         <p>
-            O que te traz aqui hoje?
+          Você pode escolher o destino da sua peça, pra quem você deseja doar.
+          Pode também se inpirar em muitos dos nossos tutorias de customização,
+          ou contratar um profissional!
         </p>
 
         <div className="btns">
           <BtnOptions
-            background="/btnoption1.png"
-            text="Tenho uma roupa"
-            pathLink="/tenho_roupa"
+            background="btnoption6.png"
+            text="Quero desapegar"
+            pathLink={"/"}
           />
           <BtnOptions
-            background="/btnoption2.png"
-            text="Preciso de uma roupa"
-            pathLink="/lista_pecas"
-          />
-          <BtnOptions
-            background="/btnoption5.png"
-            text="Ofereço um serviço"
-            pathLink="/cadastrar_servico"
+            background="btnoption7.png"
+            text="Quero reformar"
+            pathLink={"/"}
           />
         </div>
+
+        <Link href="/home" passHref>
+          <a className="backLink">Voltar</a>
+        </Link>
       </Main>
 
       <ContentBlog>

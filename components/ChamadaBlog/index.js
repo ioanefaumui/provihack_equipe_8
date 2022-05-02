@@ -7,7 +7,7 @@ const ChamadaBlog = ({ text, img, altImg, pathLink }) => {
     <Container>
       <Link href={pathLink} passHref>
         <a>
-          <div className="imgChamada">
+          <div className="imgChamada" id="hoverImg">
             <Image src={img} alt={altImg} layout="fill" />
           </div>
           <p>{text}</p>

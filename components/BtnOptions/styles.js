@@ -7,6 +7,8 @@ export const Content = styled.div`
   border-radius: 10px;
   position: relative;
   background-image: url(${props => props.background});
+  cursor:pointer;
+  transition: transform 0.2s;
 
   div {
     width: 100%;
@@ -27,5 +29,9 @@ export const Content = styled.div`
     margin: 0 auto;
     line-height: 1.2;
     text-transform: uppercase;
+  }
+
+  :hover {
+    transform: scale(1.1, 1.1);
   }
 `;
