@@ -7,12 +7,14 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import Router from "next/router";
 
 export default function HomePage() {
-  const [user, setUser] = useState("Yasmin");
+  const [user, setUser] = useState("");
   const [blog, setBlog] = useState([
     { id: 1, imagem: "img", description: "aconteu isso e aqui" },
     { id: 2, imagem: "img2", description: "aconteu isso e aqui" },
     { id: 3, imagem: "img3", description: "aconteu isso e aqui" },
   ]);
+
+  const router = useRouter();
 
   const { data: status } = useSession();
 
