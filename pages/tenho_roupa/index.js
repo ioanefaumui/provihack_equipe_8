@@ -2,7 +2,7 @@ import BtnOptions from "../../components/BtnOptions";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Link from "next/link";
-import { Container, Main, ContentBlog } from "../../styles/modificarRoupa";
+import { Container, Main, ContentBlog } from "../../styles/tenhoRoupa";
 import ChamadaBlog from "../../components/ChamadaBlog";
 
 export default function ModificarRoupa() {

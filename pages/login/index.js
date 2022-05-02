@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container } from "../../styles/login";
 import BtnPages from "../../components/BtnPages";
 import Image from "next/image";
 import { useState } from "react";

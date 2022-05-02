@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container } from "../../styles/listaPecas";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Link from "next/link";
@@ -10,13 +10,14 @@ export default function ListPecas() {
       <Header />
 
       <main>
-        <h1>
-          Olha o que encontramos!
-        </h1>
+        <h1>Olha o que encontramos!</h1>
 
         <ul className="tipsList">
           <li>
-            <Link href="/quero_fazer_eu_mesmo/como_fazer_aplicacao_de_perolas_em_seus_jeans" passHref>
+            <Link
+              href="/quero_fazer_eu_mesmo/como_fazer_aplicacao_de_perolas_em_seus_jeans"
+              passHref
+            >
               <a>
                 <div className="imgCover">
                   <Image src="/roupa1.png" alt="" layout="fill" />

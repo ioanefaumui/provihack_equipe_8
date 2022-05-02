@@ -51,27 +51,28 @@ export const Main = styled.main`
   }
 
   label {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   #inputTam {
-      width: 4vw;
-      margin-left: 0.5em;
+    width: 4vw;
+    margin-left: 0.5em;
   }
 
   #inputType {
     width: 11.1vw;
   }
 
-  #inputColor, #inputMarca {
-      width: 7.6vw;
+  #inputColor,
+  #inputMarca {
+    width: 7.6vw;
   }
 
   #inputColor {
-      margin-right: 0.5em;
+    margin-right: 0.5em;
   }
 
   #inputLocal {
-      width: 11.1vw;
+    width: 11.1vw;
   }
 `;

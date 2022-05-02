@@ -2,7 +2,7 @@ import BtnOptions from "../../components/BtnOptions";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Link from "next/link";
-import { Container, Main, ContentBlog } from "./styles";
+import { Container, Main, ContentBlog } from "../../styles/queroReformar";
 import ChamadaBlog from "../../components/ChamadaBlog";
 
 export default function QueroReformar() {
@@ -60,7 +60,7 @@ export default function QueroReformar() {
             pathLink={"/"}
           />
         </div>
-        
+
         <div className="divLink">
           <Link href="/" passHref>
             <a className="seeMorelink">Veja mais</a>

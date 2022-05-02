@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import { Container, ContentBlog, Main } from "./styles";
+import { Container, ContentBlog, Main } from "../../styles/home";
 import Footer from "../../components/Footer";
 import BtnOptions from "../../components/BtnOptions";
 import ChamadaBlog from "../../components/ChamadaBlog";
@@ -30,9 +30,7 @@ export default function HomePage() {
 
       <Main>
         <h1>Olá, {user}!</h1>
-        <p>
-            O que te traz aqui hoje?
-        </p>
+        <p>O que te traz aqui hoje?</p>
 
         <div className="btns">
           <BtnOptions

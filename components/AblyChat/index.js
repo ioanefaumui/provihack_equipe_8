@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useChannel } from "./AblyReactEffect";
 import { Container } from "./styles";
 import Image from "next/image";
@@ -43,14 +43,10 @@ export default function AblyChatComponent() {
     <Container>
       <h2>Mensagens</h2>
       <div className="userChat">
-          <div className="imgUser">
-              <Image
-                src="/user.png"
-                alt="Imagem do usuário"
-                layout="fill"
-              />
-          </div>
-          <p>Juliana</p>
+        <div className="imgUser">
+          <Image src="/user.png" alt="Imagem do usuário" layout="fill" />
+        </div>
+        <p>Juliana</p>
       </div>
       <div className="chatText">
         {receivedMessages.map((message, index) => {

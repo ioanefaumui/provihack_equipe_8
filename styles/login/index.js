@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   background-image: url("landing-page-bg.webp");
-  
+
   div.content {
     width: 18vw;
     height: 40vh;
@@ -33,34 +33,35 @@ export const Container = styled.div`
   }
 
   form input {
-      width: 100%;
-      background-color: transparent;
-      border: 1px solid #235051;
-      border-radius: 10px;
-      height: 4vh;
-      margin-bottom: 0.6em;
-      padding: 1em;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #235051;
+    border-radius: 10px;
+    height: 4vh;
+    margin-bottom: 0.6em;
+    padding: 1em;
   }
 
-  label, span {
-      display: block;
-      color: #235051;
-      font-size: 14px;
-      margin-bottom: 0.6em;
+  label,
+  span {
+    display: block;
+    color: #235051;
+    font-size: 14px;
+    margin-bottom: 0.6em;
   }
 
   span {
-      text-decoration: underline;
-      font-size: 12px;
+    text-decoration: underline;
+    font-size: 12px;
   }
 
   .divPassword {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   button {
-      margin-top: 1.5em;
+    margin-top: 1.5em;
   }
 `;
