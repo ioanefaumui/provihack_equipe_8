@@ -25,8 +25,8 @@ export const Content = styled.div`
   }
 
   div.infosPost {
-      color: #909E9E;
-      text-align: center;
+    color: #909e9e;
+    text-align: center;
   }
 
   div.infosPost p.referencePost {
@@ -43,19 +43,20 @@ export const Content = styled.div`
   }
 
   div.imgsJeans img {
-      border-radius: 10px;
+    border-radius: 10px;
   }
 
   div.img4jeans {
-      height: 800px;
+    height: 800px;
   }
 
-  p, ul {
-      width: 77%;
-      margin: 1.5em auto;
+  p,
+  ul {
+    width: 77%;
+    margin: 1.5em auto;
   }
 
   p#voila {
-      font-weight: 600;
+    font-weight: 600;
   }
 `;
