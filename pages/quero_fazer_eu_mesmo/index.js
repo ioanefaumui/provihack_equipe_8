@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container } from "../../styles/queroFazerEuMesmo";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Link from "next/link";
@@ -16,7 +16,10 @@ export default function QueroFazerEuMesmo() {
 
         <ul className="tipsList">
           <li>
-            <Link href="/quero_fazer_eu_mesmo/como_fazer_aplicacao_de_perolas_em_seus_jeans" passHref>
+            <Link
+              href="/quero_fazer_eu_mesmo/como_fazer_aplicacao_de_perolas_em_seus_jeans"
+              passHref
+            >
               <a>
                 <div className="imgCover">
                   <Image src="/custom1.png" alt="" layout="fill" />

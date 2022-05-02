@@ -21,7 +21,12 @@ const LandingPage = () => {
           Faça Login
         </a>
 
-        <a className={`${styles.btn} ${styles.cadastrar}`}>Me cadastrar</a>
+        <a
+          className={`${styles.btn} ${styles.cadastrar}`}
+          onClick={() => signIn(null, { callbackUrl: "/home" })}
+        >
+          Me cadastrar
+        </a>
       </Container>
     </div>
   );

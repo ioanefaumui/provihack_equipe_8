@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container } from "../../styles/servicosCadastrados";
 import Image from "next/image";
 import BtnPages from "../../components/BtnPages";
 import Header from "../../components/Header";
@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function ServicoCadastrado() {
   return (
     <Container>
-      <Header />   
+      <Header />
 
       <div className="imgCongrats">
         <Image
@@ -19,7 +19,10 @@ export default function ServicoCadastrado() {
       </div>
 
       <h2>Cadastro efetuado com sucesso!</h2>
-      <p>Obrigada pelos seus serviços e se engajar por um planeta mais sustentável!</p>
+      <p>
+        Obrigada pelos seus serviços e se engajar por um planeta mais
+        sustentável!
+      </p>
 
       <Link href="/" passHref>
         <a className="linkToPage">Ir para a página do serviço</a>
