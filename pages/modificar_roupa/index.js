@@ -9,7 +9,6 @@ export default function ModificarRoupa() {
   return (
     <Container>
       <Header />
-
       <Main>
         <h1>Como quer modificar?</h1>
         <p>
