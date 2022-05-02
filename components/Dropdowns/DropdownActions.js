@@ -6,7 +6,7 @@ const DropdownActions = () => {
         <Container>
             <ul>
                 <li>
-                    <Link href="/tenho_uma_roupa" passHref>
+                    <Link href="/tenho_roupa" passHref>
                         <a>Tenho uma roupa</a>
                     </Link>
                 </li>
