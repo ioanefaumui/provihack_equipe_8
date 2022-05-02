@@ -37,7 +37,7 @@ export default function HomePage() {
               <button
                 className={styles.liList}
                 type="button"
-                onClick={() => router.push("/doar")}
+                onClick={() => router.push("/tenho_roupa")}
               >
                 Tenho uma Roupa
               </button>

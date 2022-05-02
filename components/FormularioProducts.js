@@ -19,7 +19,14 @@ export default function FormularioProducts() {
   }
 
   return (
-    <>
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <form action="/cadastro_products" method="post">
         <label>Descrição: </label>
         <input
@@ -74,11 +81,11 @@ export default function FormularioProducts() {
           onChange={(event) => setDisponivel(event.target.value)}
         >
           <option value="">Select...</option>
-          <option value="True">Vendido</option>
+          <option value="True">Doado</option>
           <option value="False">Disponivel</option>
         </select>
         <button type="submit">Enviar</button>
       </form>
-    </>
+    </div>
   );
 }
