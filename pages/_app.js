@@ -15,30 +15,37 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           flexDirection: "column",
           width: "200px",
           fontSize: "13px",
+          textAlign: "right",
         }}
       >
         <Link href="/">
-          <button>Landing Page</button>
+          <a>Landing Page</a>
         </Link>
         <Link href="/home">
-          <button>Home</button>
+          <a>Home</a>
         </Link>
         <Link href="/cadastro_products">
-          <button>Cadastrar Produtos</button>
+          <a>Cadastrar Produtos</a>
         </Link>
         <Link href="/lista_pecas">
-          <button>Lista pecas</button>
+          <a>Lista pecas</a>
         </Link>
-        <Link href="/lista_profissional">
-          <button>Lista profissional</button>
+        <Link href="/buscar_peca">
+          <a>Buscar peca</a>
         </Link>
         <Link href="/pecas_id">
-          <button>Pecas ID</button>
+          <a>Pecas ID</a>
         </Link>
+        <Link href="/lista_profissional">
+          <a>Lista profissional</a>
+        </Link>
+        <Link href="/buscar_profissional">
+          <a>Buscar profissional</a>
+        </Link>
+
         <Link href="/profissional_id">
-          <button>Profissional ID</button>
+          <a>Profissional ID</a>
         </Link>
-        Esse menu é somente pra facilitar a navegação em desenvolvimento
       </div>
       <SessionProvider session={session}>
         <GlobalStyle />
