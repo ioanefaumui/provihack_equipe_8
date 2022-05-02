@@ -22,12 +22,12 @@ export default function QueroReformar() {
           <BtnOptions
             background="btnoption3.png"
             text="Quero fazer eu mesmo"
-            pathLink={"/"}
+            pathLink={"/quero_fazer_eu_mesmo"}
           />
           <BtnOptions
             background="btnoption4.png"
             text="Quero ajuda profissional"
-            pathLink={"/"}
+            pathLink={"/profissionais"}
           />
         </div>
 

@@ -22,12 +22,12 @@ export default function ModificarRoupa() {
           <BtnOptions
             background="btnoption6.png"
             text="Quero desapegar"
-            pathLink={"/"}
+            pathLink={"/cadastrar_roupa"}
           />
           <BtnOptions
             background="btnoption7.png"
             text="Quero reformar"
-            pathLink={"/"}
+            pathLink={"/quero_reformar"}
           />
         </div>
 
