@@ -1,4 +1,4 @@
-import { Container, Content } from "./styles";
+import { Container, Content } from "../../../styles/queroFazerEuMesmo/dicas";
 import Image from "next/image";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";

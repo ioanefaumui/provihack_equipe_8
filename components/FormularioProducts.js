@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function FormularioProducts() {
   const [descricao, setDescricao] = useState("");
@@ -17,8 +17,6 @@ export default function FormularioProducts() {
   if (cor.value == "") {
     return "Está faltando a cor";
   }
-
-  useEffect(() => {}, []);
 
   return (
     <>

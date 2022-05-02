@@ -1,25 +1,25 @@
 import { useState } from "react";
 import styles from "../styles/pages/TenhoRoupa.module.css";
-import Footer from "../components/Footer"
-import Header from "../Header";
-export default function TenhoRoupa(){
-
-    const [blog,setBlog] = useState([
-        { id: 1, imagem: "img", description: "aconteu isso e aqui" },
-        { id: 2, imagem: "img2", description: "aconteu isso e aqui" },
-        { id: 3, imagem: "img3", description: "aconteu isso e aqui" },
-    ])
-    return(
-        <>
-        <Header/>
-         <main className={styles.main}>
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+export default function TenhoRoupa() {
+  const [blog, setBlog] = useState([
+    { id: 1, imagem: "img", description: "aconteu isso e aqui" },
+    { id: 2, imagem: "img2", description: "aconteu isso e aqui" },
+    { id: 3, imagem: "img3", description: "aconteu isso e aqui" },
+  ]);
+  return (
+    <>
+      <Header />
+      <main className={styles.main}>
         <h1>O que deseja fazer com a sua roupa?</h1>
-        <p className={styles.descricao}>Você pode escolher o destino da sua peça, 
-            pra quem você deseja doar. Pode também se 
-            inpirar em muitos dos nossos tutorias de customização,
-             ou contratar um profissional!</p>
+        <p className={styles.descricao}>
+          Você pode escolher o destino da sua peça, pra quem você deseja doar.
+          Pode também se inpirar em muitos dos nossos tutorias de customização,
+          ou contratar um profissional!
+        </p>
 
-             <div className={styles.blogPage}>
+        <div className={styles.blogPage}>
           <ul className={styles.ulList}>
             <li className={styles.list}>
               <button
@@ -39,16 +39,15 @@ export default function TenhoRoupa(){
                 Preciso de uma Roupa
               </button>
             </li>
-            
           </ul>
         </div>
         <button
-              className={styles.veja}
-              type="button"
-              onClick={() => router.push("/blog")}
-            >
-              Voltar
-            </button>
+          className={styles.veja}
+          type="button"
+          onClick={() => router.push("/blog")}
+        >
+          Voltar
+        </button>
         <div className={styles.blogName}>
           <h3>Últimas do Blog</h3>
           <div>
@@ -85,6 +84,5 @@ export default function TenhoRoupa(){
 
       <Footer />
     </>
-        
-    )
+  );
 }
